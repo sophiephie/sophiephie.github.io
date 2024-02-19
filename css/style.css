@@ -527,6 +527,12 @@ mark,
 
 .img-fluid {
   max-width: 100%;
+  width: auto;
+  height: 200px;
+}
+
+.img-profile {
+  max-width: 100%;
   height: auto;
 }
 
