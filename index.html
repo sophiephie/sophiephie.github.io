@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/sophie-hsu-favicon-color.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,7 +34,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
+            <div class="navbar-nav m-auto ml-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#skill" class="nav-item nav-link">Skill</a>
                 <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
@@ -219,18 +219,37 @@
     <!-- Contact End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
+<!-- Footer Start -->
+<div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="container text-center py-5">
         <!-- Footer Social Icons -->
-<div class="d-flex justify-content-center mb-4">
-    <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/hsu-sophie/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a class="btn btn-light btn-social" href="https://github.com/sophiephie?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-</div>
-
+        <div class="d-flex justify-content-center mb-4">
+            <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/hsu-sophie/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-light btn-social mr-2" href="https://github.com/sophiephie?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- Email Icon Button -->
+            <button onclick="startEmail()" class="btn btn-light btn-social">
+                <i class="fas fa-envelope"></i>
+            </button>
         </div>
+
+        <script>
+            function startEmail() {
+                const to = "shsu89@gmail.com";  // Replace with your email address
+                const mailtoLink = `mailto:${to}`;
+
+                // Open the user's default email client
+                window.location.href = mailtoLink;
+            }
+        </script>
+
+        <!-- Copyright Notice -->
+        <footer class="container-fluid bg-primary text-white text-center py-3">
+            <p>&copy; 2024 Sophie Hsu</p>
+        </footer>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
+
 
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
