@@ -1,215 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Sophie Hsu's Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <!-- Favicon -->
-    <link href="img/favicon.png" rel="icon">
+    <link href="img/favicon.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Sophie</span>Hsu</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto ml-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-            </div>
+    <nav
+      class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand ml-lg-3">
+        <h1 class="m-0 display-5">
+          <span class="text-primary">Sophie</span>Hsu
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+        <div class="navbar-nav m-auto ml-auto py-0">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#skill" class="nav-item nav-link">Skill</a>
+          <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
         </div>
+      </div>
     </nav>
     <!-- Navbar End -->
 
-
     <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>        
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src=""
+                id="video"
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Video Modal End -->
 
-
     <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-profile w-100 rounded-circle shadow-sm" src="img/profile.JPG" alt="">
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Sophie Hsu</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Full Stack Developer</div>
-                    <div class="col-lg-10">
-                        <p>Transforming Ideas into Code.  <br>I'm passionate to bring a fusion of creativity and technical expertise to every project.</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="./assets/cv-sophiehsu.pdf" class="btn btn-outline-light mr-5">Download CV</a>
-                    </div>
-                </div>
+    <div
+      class="container-fluid bg-primary d-flex align-items-center mb-5 py-5"
+      id="home"
+      style="min-height: 100vh"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+            <img
+              class="img-profile w-100 rounded-circle shadow-sm"
+              src="img/profile.JPG"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-7 text-center text-lg-left">
+            <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+            <h1
+              class="display-3 text-uppercase text-primary mb-2"
+              style="-webkit-text-stroke: 2px #ffffff"
+            >
+              Sophie Hsu
+            </h1>
+            <h1
+              class="typed-text-output d-inline font-weight-lighter text-white"
+            ></h1>
+            <div class="typed-text d-none">Full Stack Developer</div>
+            <div class="col-lg-10">
+              <p>
+                Transforming Ideas into Code. <br />I'm passionate to bring a
+                fusion of creativity and technical expertise to every project.
+              </p>
             </div>
+            <div
+              class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
+            >
+              <a
+                href="./assets/cv-sophiehsu.pdf"
+                class="btn btn-outline-light mr-5"
+                >Download CV</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Header End -->
 
-        <!-- Skill Start -->
-<div class="container-fluid py-5" id="skill">
-    <div class="container">
-        <div class="position-relative d-flex align-items-center justify-content-center">
-            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-            <h1 class="position-absolute text-uppercase text-primary">Skills and Technologies</h1>
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Skills
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            Skills and Technologies
+          </h1>
         </div>
         <div class="row align-items-center">
-            <div class="col-md-12">
-                <div class="card p-4 text-center">
-                    <div class="d-flex justify-content-center flex-wrap">
-                        <!-- Bootstrap Badges for Skills with Larger Size -->
-                        <span class="badge badge-primary badge-xxl mx-2 my-1">HTML</span>
-                        <span class="badge badge-warning badge-xxl mx-2 my-1">CSS</span>
-                        <span class="badge badge-danger badge-xxl mx-2 my-1">Javascript</span>
-                        <span class="badge badge-info badge-xxl mx-2 my-1">Bootstrap</span>
-                        <span class="badge badge-success badge-xxl mx-2 my-1">Tailwind</span>
-                        <span class="badge badge-secondary badge-xxl mx-2 my-1">React</span>
-                        <span class="badge badge-dark badge-xxl mx-2 my-1">Node.js</span>
-                        <span class="badge badge-primary badge-xxl mx-2 my-1">PHP</span>
-                        <span class="badge badge-danger badge-xxl mx-2 my-1">Java</span>
-                        <span class="badge badge-secondary badge-xxl mx-2 my-1">C#</span>
-                        <span class="badge badge-success badge-xxl mx-2 my-1">.NET</span>
-                        <span class="badge badge-info badge-xxl mx-2 my-1">MySQL</span>
-                        <span class="badge badge-warning badge-xxl mx-2 my-1">AWS</span>
-                        <span class="badge badge-dark badge-xxl mx-2 my-1">Visual Studio</span>
-                        <span class="badge badge-primary badge-xxl mx-2 my-1">VS Code</span>
-                        <span class="badge badge-success badge-xxl mx-2 my-1">IntelliJ</span>
-                        <span class="badge badge-info badge-xxl mx-2 my-1">Github</span>
-                        <span class="badge badge-warning badge-xxl mx-2 my-1">Trello</span>
-                        <span class="badge badge-danger badge-xxl mx-2 my-1">Agile</span>
-                        <span class="badge badge-secondary badge-xxl mx-2 my-1">Figma</span>
-                    </div>
-                </div>
+          <div class="col-md-12">
+            <div class="card p-4 text-center">
+              <div class="d-flex justify-content-center flex-wrap">
+                <!-- Bootstrap Badges for Skills with Larger Size -->
+                <span class="badge badge-primary badge-xxl mx-2 my-1"
+                  >HTML</span
+                >
+                <span class="badge badge-warning badge-xxl mx-2 my-1">CSS</span>
+                <span class="badge badge-danger badge-xxl mx-2 my-1"
+                  >Javascript</span
+                >
+                <span class="badge badge-info badge-xxl mx-2 my-1"
+                  >Bootstrap</span
+                >
+                <span class="badge badge-success badge-xxl mx-2 my-1"
+                  >Tailwind</span
+                >
+                <span class="badge badge-secondary badge-xxl mx-2 my-1"
+                  >React</span
+                >
+                <span class="badge badge-dark badge-xxl mx-2 my-1"
+                  >Node.js</span
+                >
+                <span class="badge badge-primary badge-xxl mx-2 my-1">PHP</span>
+                <span class="badge badge-danger badge-xxl mx-2 my-1">Java</span>
+                <span class="badge badge-secondary badge-xxl mx-2 my-1"
+                  >C#</span
+                >
+                <span class="badge badge-success badge-xxl mx-2 my-1"
+                  >.NET</span
+                >
+                <span class="badge badge-info badge-xxl mx-2 my-1">MySQL</span>
+                <span class="badge badge-warning badge-xxl mx-2 my-1">AWS</span>
+                <span class="badge badge-dark badge-xxl mx-2 my-1"
+                  >Visual Studio</span
+                >
+                <span class="badge badge-primary badge-xxl mx-2 my-1"
+                  >VS Code</span
+                >
+                <span class="badge badge-success badge-xxl mx-2 my-1"
+                  >IntelliJ</span
+                >
+                <span class="badge badge-info badge-xxl mx-2 my-1">Github</span>
+                <span class="badge badge-warning badge-xxl mx-2 my-1"
+                  >Trello</span
+                >
+                <span class="badge badge-danger badge-xxl mx-2 my-1"
+                  >Agile</span
+                >
+                <span class="badge badge-secondary badge-xxl mx-2 my-1"
+                  >Figma</span
+                >
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>      
     <!-- Skill End -->
 
-   <!-- Portfolio Start -->
-<div class="container-fluid pt-5 pb-3" id="portfolio">
-    <div class="container">
-        <div class="position-relative d-flex align-items-center justify-content-center">
-            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-            <h1 class="position-absolute text-uppercase text-primary">My Projects</h1>
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+      <div class="container">
+        <div
+          class="position-relative d-flex align-items-center justify-content-center"
+        >
+          <h1
+            class="display-1 text-uppercase text-white"
+            style="-webkit-text-stroke: 1px #dee2e6"
+          >
+            Gallery
+          </h1>
+          <h1 class="position-absolute text-uppercase text-primary">
+            My Projects
+          </h1>
         </div>
         <div class="row portfolio-container">
-            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="img/portfolio-1.png" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="https://harmony-hub-client-748a5025ff7d.herokuapp.com" target="_blank">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Portfolio Description -->
-                <div class="portfolio-description">
-                    <h4>HarmonyHub</h4>
-                    <h6>Music Sharing Platform</h6>
-                    <p>React, Node.js, Express.js, MySQL, AWS, Tailwind </p>
-                    <a href="https://github.com/sophiephie/harmonyhub-client" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://harmony-hub-client-748a5025ff7d.herokuapp.com" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
+
+          <!-- 4 -->
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item fourth">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/projectile.png"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="https://projectile-frontend-9b2d04e139e9.herokuapp.com/welcome" target="_blank">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
             </div>
-            
-            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="img/portfolio-2.png" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="https://playlistpalooza.000webhostapp.com/index.php" target="_blank">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Portfolio Description -->
-                <div class="portfolio-description">
-                    <h4>PlaylistPalooza</h4>
-                    <h6>Concert Booking Application</h6>
-                    <p>HTML, CSS, Bootstrap, Javascript, PHP</p>
-                    <a href="https://github.com/sophiephie/PlaylistPalooza" target="_blank">
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    <a href="https://playlistpalooza.000webhostapp.com/index.php" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
+            <!-- Portfolio Description -->
+            <div class="portfolio-description">
+              <h4>ProjecTile</h4>
+              <h6>Task Management App</h6>
+              <p>MERN, Socket.io, React-Beautiful-DnD DaisyUI</p>
+              <a
+                href="https://github.com/cirque-du-soli/projectile-fe"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://projectile-frontend-9b2d04e139e9.herokuapp.com/welcome"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
-            
-            <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                <div class="position-relative overflow-hidden mb-2">
-                    <img class="img-fluid rounded w-100" src="img/portfolio-3.png" alt="">
-                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                        <a href="https://mtl-crazy-driver.vercel.app/" target="_blank">
-                            <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- Portfolio Description -->
-                <div class="portfolio-description">
-                    <h4>Montreal Crazy Driver</h4>
-                    <h6>Web Game</h6>
-                    <p>HTML, CSS, Javascript</p>
-                    <a href="https://github.com/sophiephie/mtl-crazy-driver" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://mtl-crazy-driver.vercel.app/" target="_blank">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
+          </div>
+
+          <!-- 1 -->
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-1.png"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a
+                  href="https://harmony-hub-client-748a5025ff7d.herokuapp.com"
+                  target="_blank"
+                >
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
             </div>
+            <!-- Portfolio Description -->
+            <div class="portfolio-description">
+              <h4>HarmonyHub</h4>
+              <h6>Music Sharing Platform</h6>
+              <p>React, Node.js, Express.js, MySQL, AWS, Tailwind</p>
+              <a
+                href="https://github.com/sophiephie/harmonyhub-client"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://harmony-hub-client-748a5025ff7d.herokuapp.com"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-2.png"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a
+                  href="https://playlistpalooza.000webhostapp.com/index.php"
+                  target="_blank"
+                >
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Portfolio Description -->
+            <div class="portfolio-description">
+              <h4>PlaylistPalooza</h4>
+              <h6>Concert Booking Application</h6>
+              <p>HTML, CSS, Bootstrap, Javascript, PHP</p>
+              <a
+                href="https://github.com/sophiephie/PlaylistPalooza"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://playlistpalooza.000webhostapp.com/index.php"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/portfolio-3.png"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="https://mtl-crazy-driver.vercel.app/" target="_blank">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Portfolio Description -->
+            <div class="portfolio-description">
+              <h4>Montreal Crazy Driver</h4>
+              <h6>Web Game</h6>
+              <p>HTML, CSS, Javascript</p>
+              <a
+                href="https://github.com/sophiephie/mtl-crazy-driver"
+                target="_blank"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://mtl-crazy-driver.vercel.app/" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item fifth">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/myfridgefriend.png"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="https://github.com/sophiephie/MyFridgeFriend" target="_blank">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Portfolio Description -->
+            <div class="portfolio-description">
+              <h4>My Fridge Friend</h4>
+              <h6>Inventory manager for the kitchen</h6>
+              <p>C#, .Net Framework </p>
+              <a href="https://github.com/sophiephie/MyFridgeFriend" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <!-- <a href="#" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a> -->
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col-lg-4 col-md-6 mb-4 portfolio-item sixth">
+            <div class="position-relative overflow-hidden mb-2">
+              <img
+                class="img-fluid rounded w-100"
+                src="img/mommingle.png"
+                alt=""
+              />
+              <div
+                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
+              >
+                <a href="https://github.com/sophiephie/MomMingle" target="_blank">
+                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Portfolio Description -->
+            <div class="portfolio-description">
+              <h4>MomMingle</h4>
+              <h6>Social Media Platform for Moms</h6>
+              <p>React,js, Node.js </p>
+              <a href="https://github.com/sophiephie/MomMingle" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- Portfolio End -->
-
-
+    <!-- Portfolio End -->
 
     <!-- Contact Start -->
     <!-- <div class="container-fluid py-5" id="contact">
@@ -258,45 +494,56 @@
     </div> -->
     <!-- Contact End -->
 
-
-<!-- Footer Start -->
-<div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-    <div class="container text-center py-5">
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5"
+    >
+      <div class="container text-center py-5">
         <!-- Footer Social Icons -->
         <div class="d-flex justify-content-center mb-4">
-            <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/hsu-sophie/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a class="btn btn-light btn-social mr-2" href="https://github.com/sophiephie?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-            <!-- Email Icon Button -->
-            <button onclick="startEmail()" class="btn btn-light btn-social">
-                <i class="fas fa-envelope"></i>
-            </button>
+          <a
+            class="btn btn-light btn-social mr-2"
+            href="https://www.linkedin.com/in/hsu-sophie/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="btn btn-light btn-social mr-2"
+            href="https://github.com/sophiephie?tab=repositories"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <!-- Email Icon Button -->
+          <button onclick="startEmail()" class="btn btn-light btn-social">
+            <i class="fas fa-envelope"></i>
+          </button>
         </div>
 
         <script>
-            function startEmail() {
-                const to = "shsu89@gmail.com";  // Replace with your email address
-                const mailtoLink = `mailto:${to}`;
+          function startEmail() {
+            const to = "shsu89@gmail.com"; // Replace with your email address
+            const mailtoLink = `mailto:${to}`;
 
-                // Open the user's default email client
-                window.location.href = mailtoLink;
-            }
+            // Open the user's default email client
+            window.location.href = mailtoLink;
+          }
         </script>
 
         <!-- Copyright Notice -->
         <footer class="container-fluid bg-primary text-white text-center py-3">
-            <p>&copy; 2024 Sophie Hsu</p>
+          <p>&copy; 2024 Sophie Hsu</p>
         </footer>
+      </div>
     </div>
-</div>
-<!-- Footer End -->
-
+    <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -314,6 +561,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
